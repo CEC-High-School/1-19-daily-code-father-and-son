@@ -1,10 +1,23 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <string>
+#include <algorithm>
+using namespace std;
+
+struct Student {
+	int age;
+	string firstname;
+	string lastname;
+	int standard;
+};
+int main() {
+	Student st;
+cout << "what is the childs age,first name and last name." << endl;
+	cin >> st.age >> st.firstname >> st.lastname >> st.standard;
+	cout << st.age <<" " << st.firstname << " " << st.lastname << " " << st.standard;
 
 
-//instructions for 1-19
-//
-//intro: Write a program that asks a user for how old they are, and then repeats that number back to them in an insult.
-//
-//intermediate: Write a program that prints the numbers 256 down to 32, counting by fours
-//
-//advanced: make an account at HackerRank.com
-//do this problem: https://www.hackerrank.com/challenges/c-tutorial-struct/problem
+	return 0;
+}
